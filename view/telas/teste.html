@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/view/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js" integrity="sha384-/TgkGk7p307TH7EXJDuUlgG3Ce1UVolAOFopFekQkkXihi5u/6OCvVKyz1W+idaz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Header" 
+        hx-trigger="load"
+        hx-get="subTelas-Globais/Header.html" >
+    </div>
+    <main>
+        <section class="hero r" style="border-radius: 0 0 100px 100px;">
+            <article class="ap" style="padding-bottom: 1.5%; gap: 150px; color: white;">
+                <h3>
+                    <i>O controle completo que sua <br>empresa precisa em um só lugar</i>
+                </h3>
+                <div class="btns">
+                    <button style="background-color: #cf5adc; font-size: 1vw;">
+                        <b>Comece agora<br> gratuitamente</b>
+                    </button>
+                    <button style="background-color: #862AFF; font-size: 1vw;">
+                        <b>Faça um teste</b>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <div id="Footer" 
+            hx-trigger="load"
+            hx-get="subTelas-Globais/Footer.html" >
+    </div>
+
+    <script src="/view/telas/script.js"></script>
+</body>
+</html>

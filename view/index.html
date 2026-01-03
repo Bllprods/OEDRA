@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OEDRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js" integrity="sha384-/TgkGk7p307TH7EXJDuUlgG3Ce1UVolAOFopFekQkkXihi5u/6OCvVKyz1W+idaz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Header" 
+            hx-trigger="load"
+            hx-get="telas/subTelas-Globais/Header.html" >
+    </div>
+    <main>
+        <section class="hero r" style="border-radius: 0 0 100px 100px;">
+            <article class="ap" style="padding-bottom: 1.5%; gap: 150px; color: white;">
+                <h3>
+                    <i>O controle completo que sua <br>empresa precisa em um só lugar</i>
+                </h3>
+                <div class="btns">
+                    <button style="background-color: #cf5adc; font-size: 1vw;">
+                        <b>Comece agora<br> gratuitamente</b>
+                    </button>
+                    <button style="background-color: #862AFF; font-size: 1vw;">
+                        <b>Faça um teste</b>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section class="hero b">
+            <article class="ap" style="gap: 100px; padding-top: 1.5rem; ">
+                <h3>Foque no Crescimento<br> Nós gerenciamos o resto</h3>
+                <div class="boxP">
+                    <div class="box box1" id="1">
+                        <b>INVENTÁRIO<hr></b>
+                        
+                        <div class="textMsg">
+                            Explore todas as Funcionalidades para controlar seu estoque e inventário de forma concisa e controlada
+                            <button>
+                                Testar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box box2" id="2">
+                        <b>RH<hr></b>
+                        <div class="textMsg">
+                            Explore todas as Funcionalidades para ter controle total sobre funcionarios
+                            <button>
+                                Testar
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="box box3" id="3">
+                        <b>PEDIDOS<hr></b>
+                        <div class="textMsg">
+                            Explore todas as Funcionalidades para manipular e receber pedidos e negociações
+                            <button>
+                                Testar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="boxPF">
+                        <div class="boxF1"></div>
+                        <div class="boxF2"></div>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="hero r">
+            <article class="ap">
+                <h3 style="color: white;">Explore as principais <br>funções do OEDRA</h3><br>
+                <div class="cardGroup">
+                    <div class="cards"> INVENTÁRIO </div>
+                    <div class="cards"> ENTRADAS E SAIDAS </div>
+                    <div class="cards"> PEDIDOS </div>
+                    <div class="cards"> RH </div>
+                    <div class="cards"> DOCUMENTOS </div>
+                    <div class="cards"> HUB DO FUNCIONARIO </div>
+                    <div class="cards"> </div>
+                    <div class="cards"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <div id="footer" 
+            hx-trigger="load"
+            hx-get="telas/subTelas-Globais/Footer.html" >
+    </div>
+
+    <script src="styleScript.js"></script>
+</body>
+</html>
